@@ -17,7 +17,7 @@ export class NoteController {
     }
     @Post("/")
     public async createNote(@Body() note: Note) {
-      return await this.noteServices.create(note);
+      return await this.noteServices.createNote(note);
     }
     @Put("/")
     public async updateNote(@Body() note: Note) {
